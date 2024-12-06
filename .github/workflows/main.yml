@@ -14,20 +14,20 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
+      # - uses: lowlighter/metrics@latest
+      #   with:
+      #     token: ${{ secrets.METRICS_TOKEN }}
 
       - name: 🦑 General
         if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
         with:
-          filename: general.svg
-          config_display: large
+          filename: artifacts.svg
+          # config_display: large
           token: ${{ secrets.METRICS_TOKEN }}
           base: header
           # base_indepth: yes
-          config_order: base.header, isocalendar, languages, repositories, achievements, leetcode, wakatime, topics
+          config_order: base.header, isocalendar, languages, repositories, topics
           # output_action: gist
           # committer_gist: ${{ secrets.GIST }}
           # output_action: commit
@@ -53,6 +53,23 @@ jobs:
 
           plugin_repositories: yes
           plugin_repositories_featured: Richard5678/Alignment_Algorithms, Richard5678/Transformers
+
+
+      - name: Progress
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
+        with:
+          filename: progress.svg
+          config_order: habbits, achievements, leetcode, wakatime,
+
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+
+          
+          plugin_habits: yes
+          plugin_habits_facts: no
+          plugin_habits_charts: yes
+          config_timezone: Europe/Paris
 
           plugin_achievements: yes
           plugin_achievements_only: >-
