@@ -1,6 +1,4 @@
-![Metrics](/github-metrics.svg)
-
-![Metrics](/metrics.plugin.isocalendar.fullyear.svg)
+![Metrics](/general.svg)
 
 <!---
 Richard5678/Richard5678 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
