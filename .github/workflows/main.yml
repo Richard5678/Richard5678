@@ -27,7 +27,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base: header
           # base_indepth: yes
-          config_order: header, isocalendar, stargazers, repositories, pagespeed, topics
+          config_order: base.header, isocalendar, repositories, leetcode, pagespeed, topics
           # output_action: gist
           # committer_gist: ${{ secrets.GIST }}
           # output_action: commit
@@ -43,8 +43,6 @@ jobs:
           # plugin_languages_sections: recently-used
           # plugin_languages_limit: 5
           # plugin_languages_recent_days: 365   
-
-          plugin_stargazers: yes
           
           plugin_topics: yes
           plugin_topics_limit: 10
@@ -56,6 +54,10 @@ jobs:
           plugin_repositories: yes
           plugin_repositories_featured: Richard5678/Alignment_Algorithms, Richard5678/Transformers
 
+          plugin_leetcode: yes
+          plugin_leetcode_sections: solved, skills
+          plugin_leetcode_user: Richard6469
+          
           plugin_pagespeed: yes
           plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
           plugin_pagespeed_url: https://richard5678.github.io/
@@ -70,7 +72,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
 
-          config_order: habits, wakatime, leetcode, achievements
+          config_order: habits, wakatime, leetcode, achievements, stargazers
 
           
           plugin_habits: yes
@@ -85,13 +87,11 @@ jobs:
           plugin_achievements_display: compact
           plugin_achievements_threshold: X
 
-          plugin_leetcode: yes
-          plugin_leetcode_sections: solved, skills
-          plugin_leetcode_user: Richard6469
-
           plugin_wakatime: yes
           plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, os
           plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
+
+          plugin_stargazers: yes
 
       #     config_display: large
 
