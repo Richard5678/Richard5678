@@ -27,7 +27,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base: header
           # base_indepth: yes
-          config_order: base.header, isocalendar, stargazers, languages, repositories, pagespeed, topics
+          config_order: header, isocalendar, stargazers, languages, repositories, pagespeed, topics
           # output_action: gist
           # committer_gist: ${{ secrets.GIST }}
           # output_action: commit
