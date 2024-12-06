@@ -23,16 +23,18 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           filename: general.svg
+          config_display: large
           token: ${{ secrets.METRICS_TOKEN }}
           base: header
           # base_indepth: yes
-          config_order: base.header, isocalendar, languages, notable, discussions, topics
+          config_order: base.header, isocalendar, languages, repositories, achievements, leetcode, wakatime, topics
           # output_action: gist
           # committer_gist: ${{ secrets.GIST }}
           # output_action: commit
           # committer_branch: main
           # committer_message: "updated metrics graph"
           plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
           plugin_languages: yes
           plugin_languages_ignored: Procfile, Ruby, PureBasic, Liquid, html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot, vue, scala, ejs
           plugin_languages_details: lines, bytes-size, percentage
@@ -41,11 +43,28 @@ jobs:
           plugin_languages_limit: 15
           plugin_languages_recent_days: 365
           plugin_topics: yes
-          plugin_topics_limit: 0
+          plugin_topics_limit: 3
           plugin_topics_mode: icons
-          plugin_notable: yes
-          plugin_discussions: yes
-          
+          # plugin_notable: yes
+          # plugin_discussions: yes
+
+          plugin_repositories: yes
+          plugin_repositories_featured: Richard5678/Alignment_Algorithms, Richard5678/Transformers
+
+          plugin_achievements: yes
+          plugin_achievements_only: >-
+            polyglot, stargazer, sponsor, deployer, member, maintainer, developer,
+            scripter, packager, explorer, infographile, manager
+          plugin_achievements_display: compact
+          plugin_achievements_threshold: X
+
+          plugin_leetcode: yes
+          plugin_leetcode_sections: solved, skills, recent
+          plugin_leetcode_user: Richard6469
+
+          plugin_wakatime: yes
+          plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, os
+          plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
 
       #     config_display: large
 
