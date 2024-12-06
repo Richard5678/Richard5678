@@ -23,7 +23,7 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           filename: general.svg
-          config_display: large
+          # config_display: large
           token: ${{ secrets.METRICS_TOKEN }}
           base: header
           # base_indepth: yes
