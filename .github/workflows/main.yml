@@ -54,6 +54,10 @@ jobs:
           plugin_repositories: yes
           plugin_repositories_featured: Richard5678/Alignment_Algorithms, Richard5678/Transformers
 
+          plugin_pagespeed: yes
+          plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
+          plugin_pagespeed_url: https://richard5678.github.io/
+
 
       - name: Progress
         if: ${{ success() || failure() }}
