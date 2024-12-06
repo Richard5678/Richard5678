@@ -34,7 +34,7 @@ jobs:
           # committer_branch: main
           # committer_message: "updated metrics graph"
           plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
+          # plugin_isocalendar_duration: full-year
           
           plugin_languages: yes
           plugin_languages_ignored: Procfile, Ruby, PureBasic, Liquid, less, qmake, lex, gnuplot, vue, scala, ejs
