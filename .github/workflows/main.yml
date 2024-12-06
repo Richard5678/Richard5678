@@ -46,7 +46,7 @@ jobs:
           
           plugin_topics: yes
           plugin_topics_limit: 10
-          plugin_topics_mode: icons
+          # plugin_topics_mode: icons
           
           # plugin_notable: yes
           # plugin_discussions: yes
@@ -60,10 +60,11 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           filename: progress.svg
-          config_order: habits, wakatime, leetcode, achievements
 
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
+
+          config_order: habits, wakatime, leetcode, achievements
 
           
           plugin_habits: yes
