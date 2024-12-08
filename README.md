@@ -5,9 +5,10 @@
 --->
 
 <div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%;">
-  <img src="/artifacts.svg" alt="Artifacts" style="width:48%; max-height:300px; object-fit: contain;">
-  <img src="/progress.svg" alt="Progress" style="width:48%; max-height:300px; object-fit: contain;">
+  <img src="/artifacts.svg" alt="Artifacts" style="width:48%; height:auto; display: block;">
+  <img src="/progress.svg" alt="Progress" style="width:48%; height:auto; display: block;">
 </div>
+
 
 
 
