@@ -4,28 +4,10 @@
 
 [<img align="right" width="47%" alt="🦑" src="/progress.svg">](#)
 --->
-<div style="
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
-">
-  <a href="#">
-    <img src="/artifacts.svg" alt="🦑 Artifacts" style="
-      width: 48%;
-      height: auto;
-      object-fit: contain;
-    ">
-  </a>
-  <a href="#">
-    <img src="/progress.svg" alt="🦑 Progress" style="
-      width: 48%;
-      height: auto;
-      object-fit: contain;
-    ">
-  </a>
-</div>
+
+| ![Image 1](artifacts.svg) | ![Image 2](progress.svg) |
+|:-----------------------:|:-----------------------:|
+
 
 
 
