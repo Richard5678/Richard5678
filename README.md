@@ -1,7 +1,4 @@
-<p float="left">
-  <img src="/artifacts.svg" width="49%" align="top" />
-  <img src="/progress.svg" width="49%" align="top" /> 
-</p>
+
 
 
 <!---
