@@ -6,9 +6,9 @@
 
 
 
-<p float="left"; align="middle">
-  <img src="/artifacts.svg" width="100" />
-  <img src="/progress.svg" width="100" /> 
+<p float="left";">
+  <img src="/artifacts.svg" width="100" align="top" />
+  <img src="/progress.svg" width="100" align="top"/> 
 </p>
 
 
