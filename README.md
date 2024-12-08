@@ -5,10 +5,11 @@
 # [<img align="right" width="47%" alt="🦑" src="/progress.svg">](#)
 --->
 
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px;">
+<div style="display: flex; align-items: flex-start; gap: 10px;">
     <img src="artifacts.svg" alt="Artifacts" style="flex: 1; max-width: 48%; height: auto;">
     <img src="progress.svg" alt="Progress" style="flex: 1; max-width: 48%; height: auto;">
 </div>
+
 
 
 
