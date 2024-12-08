@@ -1,11 +1,3 @@
-<!---
-[<img align="left top" width="48%" alt="🦑" src="/artifacts.svg">](#)
-
-[<img align="right top" width="48%" alt="🦑" src="/progress.svg">](#)
---->
-
-
-
 <p float="left">
   <img src="/artifacts.svg" width="49%" align="top" />
   <img src="/progress.svg" width="49%" align="top" /> 
