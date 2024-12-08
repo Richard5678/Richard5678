@@ -5,7 +5,7 @@
 [<img align="right" width="47%" alt="🦑" src="/progress.svg">](#)
 --->
 
-| ![Image 1](artifacts.svg) | ![Image 2](progress.svg) |
+ ![Image 1](artifacts.svg)  ![Image 2](progress.svg) 
 |:-----------------------:|:-----------------------:|
 
 
