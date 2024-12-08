@@ -1,9 +1,13 @@
-
+<!---
 [<img align="left top" width="48%" alt="🦑" src="/artifacts.svg">](#)
 
 [<img align="right top" width="48%" alt="🦑" src="/progress.svg">](#)
+--->
 
-
+<div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%;">
+  <img src="/artifacts.svg" alt="Artifacts" style="width:48%; height:auto;">
+  <img src="/progress.svg" alt="Progress" style="width:48%; height:auto;">
+</div>
 
 
 <!---
