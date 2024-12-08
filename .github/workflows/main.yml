@@ -41,7 +41,6 @@ jobs:
           plugin_languages_sections: most-used
           # plugin_languages_indepth_custom: Richard5678/Transformers, Richard5678/Alignment_Algorithms, Richard5678/Reinforcement_Learning
           plugin_languages_limit: 10  
-          plugin_languages_skipped: EhanW/class-dilution, EhanW/UE_flower_dilution, lintool/cs-big-cows, maxjiang216/corintho-ai, me50/Richard5678, MXueguang/query-reasoning, Richard5678/adversarial_poisons, Richard5678/Alignment_Algorithms, Richard5678/anserini, Richard5678/autoregressive-poisoning, Richard5678/Availability-Attacks-Create-Shortcuts, Richard5678/constructor, Richard5678/Conway-s-Game-of-Life, Richard5678/Creature-Classifier, Richard5678/DeepConfuse, Richard5678/dotfiles, Richard5678/final, Richard5678/Fitness-App, Richard5678/gomoku-ai, Richard5678/Gomoku_AlphaZero, Richard5678/Harvard, Richard5678/hello, Richard5678/ImagenHub, Richard5678/leetcode, Richard5678/Machine-Learning, Richard5678/nnn, Richard5678/ntga, Richard5678/One-Pixel-Shotcut, Richard5678/online, Richard5678/online-learning, Richard5678/personal_website, Richard5678/practice, Richard5678/pyserini, Richard5678/rank_llm, Richard5678/Reinforcement_Learning, Richard5678/Richard5678, Richard5678/Richard5678.github.io, Richard5678/robust-unlearnable-examples, Richard5678/testing, Richard5678/Transformers, Richard5678/Unlearnable-Examples, Richard5678/VideoGenHub, Richard5678/VideoGenHub_old, sa35577/CAM-Object-Detection, TIGER-AI-Lab/VideoGenHub, voxel-foundation/fvdb
           
           plugin_topics: yes
           plugin_topics_limit: 10
