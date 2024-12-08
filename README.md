@@ -7,8 +7,8 @@
 
 
 <p float="left">
-  <img src="/artifacts.svg" width="48%" align="top" />
-  <img src="/progress.svg" width="48%" align="top" /> 
+  <img src="/artifacts.svg" width="49%" align="top" />
+  <img src="/progress.svg" width="49%" align="top" /> 
 </p>
 
 
