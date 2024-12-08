@@ -1,28 +1,7 @@
 
-<!---
-[<img align="left" width="47%" alt="🦑" src="/artifacts.svg">](#)
+[<img align="left" width="45%" alt="🦑" src="/artifacts.svg">](#)
 
-[<img align="right" width="47%" alt="🦑" src="/progress.svg">](#)
---->
-
-<div style="
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
-  flex-wrap: nowrap;
-  box-sizing: border-box;
-">
-
-  [<img src="/artifacts.svg" alt="🦑 Artifacts" style="width:47%; height:auto; object-fit: contain;">](#)
-  
-  [<img src="/progress.svg" alt="🦑 Progress" style="width:47%; height:auto; object-fit: contain;">](#)
-
-</div>
-
-
-
-
+[<img align="right" width="45%" alt="🦑" src="/progress.svg">](#)
 
 
 
