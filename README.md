@@ -6,10 +6,10 @@
 
 
 
-<div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%;">
-  <img src="/artifacts.svg" alt="Artifacts" style="width:48%; height:auto; align=top">
-  <img src="/progress.svg" alt="Progress" style="width:48%; height:auto; align=top">
-</div>
+<p float="left">
+  <img src="/artifacts.svg" width="48%" align="top" />
+  <img src="/progress.svg" width="48%" align="top" /> 
+</p>
 
 
 
