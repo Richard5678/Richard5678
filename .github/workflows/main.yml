@@ -1,116 +1,11 @@
-# name: Metrics
-# on:
-#   # Schedule daily updates
-#   schedule: [{cron: "0 8 * * *"}]
-#   # (optional) Run workflow manually
-#   workflow_dispatch:
-#   # (Optional) Run workflow on pushes to master/main branches,
-#   # but only when main.yml is changed
-#   push:
-#     branches:
-#       - master
-#       - main
-#     paths:
-#       - .github/workflows/main.yml
-# jobs:
-#   github-metrics:
-#     runs-on: ubuntu-latest
-#     environment: 
-#       name: production
-#     permissions:
-#       contents: write
-#     steps:
-#       - name: Artifacts
-#         if: ${{ success() || failure() }}
-#         uses: lowlighter/metrics@latest
-#         with:
-#           filename: artifacts.svg
-#           # config_display: large
-#           token: ${{ secrets.METRICS_TOKEN }}
-#           base: header
-#           # base_indepth: yes
-#           config_order: base.header, isocalendar, languages, repositories, leetcode, pagespeed, topics
-          
-#           plugin_isocalendar: yes
-#           # plugin_isocalendar_duration: full-year
-          
-#           plugin_languages: yes
-#           plugin_languages_ignored: Procfile, Ruby, PureBasic, Liquid, less, qmake, lex, gnuplot, vue, scala, ejs
-#           plugin_languages_details: lines, bytes-size, percentage
-#           plugin_languages_indepth: yes
-#           plugin_languages_sections: most-used, recently-used
-#           plugin_languages_indepth_custom: Richard5678/Transformers, Richard5678/Alignment_Algorithms, Richard5678/Reinforcement_Learning
-#           plugin_languages_limit: 10
-#           plugin_languages_recent_days: 14   
-#           plugin_languages_skipped: MXueguang/query-reasoning, Richard5678/Alignment_Algorithms, Richard5678/Conway-s-Game-of-Life, Richard5678/Creature-Classifier, Richard5678/Fitness-App, Richard5678/Gomoku_AlphaZero, Richard5678/Machine-Learning, Richard5678/Reinforcement_Learning, Richard5678/Richard5678, Richard5678/Richard5678.github.io, Richard5678/Transformers, Richard5678/constructor, Richard5678/dotfiles, Richard5678/final, Richard5678/gomoku-ai, Richard5678/hello, Richard5678/leetcode, Richard5678/personal_website, Richard5678/practice, Richard5678/testing, TIGER-AI-Lab/ImagenHub, TIGER-AI-Lab/VideoGenHub, castorini/anserini, castorini/pyserini, castorini/rank_llm, chilliavocado/pyserini, me50/Richard5678, sa35577/CAM-Object-Detection, swe-train/castorini__pyserini, voxel-foundation/fvdb
-          
-#           plugin_topics: yes
-#           plugin_topics_limit: 10
-#           # plugin_topics_mode: icons
-
-#           plugin_repositories: yes
-#           plugin_repositories_featured: Richard5678/Alignment_Algorithms, Richard5678/Transformers
-
-#           plugin_leetcode: yes
-#           plugin_leetcode_sections: solved, skills
-#           plugin_leetcode_user: Richard6469
-          
-#           plugin_pagespeed: yes
-#           plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
-#           plugin_pagespeed_url: https://richard5678.github.io/
-
-
-
-#       - name: Progress
-#         if: ${{ success() || failure() }}
-#         uses: lowlighter/metrics@latest
-#         with:
-#           filename: progress.svg
-
-#           token: ${{ secrets.METRICS_TOKEN }}
-#           base: ""
-#           config_order: habits, wakatime, leetcode, achievements, stargazers
-
-#           plugin_habits: yes
-#           plugin_habits_facts: no
-#           plugin_habits_charts: yes
-#           config_timezone: America/Los_Angeles
-
-#           plugin_achievements: yes
-#           plugin_achievements_only: >-
-#             polyglot, stargazer, sponsor, deployer, member, maintainer, developer,
-#             scripter, packager, explorer, infographile, manager
-#           plugin_achievements_display: compact
-#           plugin_achievements_threshold: X
-
-#           plugin_wakatime: yes
-#           plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, os
-#           plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
-
-#           plugin_stargazers: yes
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Licensed under The Unlicense
-# Feel free to reuse, edit and redistribute this workflow as you wish, no credits needed
-# See https://github.com/lowlighter/metrics for documentation about how to use metrics action
-
 name: Metrics
 on:
-  # 🌏 Think about the planet! No need to update stats too frequently
-  schedule: [{cron: "0 16 * * *"}]
-  # 💡 The following line lets you run workflow manually from the action tab!
+  # Schedule daily updates
+  schedule: [{cron: "0 8 * * *"}]
+  # (optional) Run workflow manually
   workflow_dispatch:
+  # (Optional) Run workflow on pushes to master/main branches,
+  # but only when main.yml is changed
   push:
     branches:
       - master
@@ -118,99 +13,81 @@ on:
     paths:
       - .github/workflows/main.yml
 jobs:
-  metrics:
+  github-metrics:
     runs-on: ubuntu-latest
     environment: 
       name: production
     permissions:
       contents: write
     steps:
-
-      - name: 🦑 Medias
+      - name: Artifacts
         if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
         with:
-          filename: medias.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          # config_order: anilist, music
-          # output_action: gist
-          # committer_gist: ${{ secrets.GIST }}
-          plugin_anilist: yes
-          plugin_anilist_medias: anime
-          plugin_anilist_sections: favorites, characters
-          plugin_anilist_limit: 2
-          plugin_anilist_limit_characters: 22
-          # plugin_music: yes
-          # plugin_music_playlist: ${{ secrets.PLAYLIST }}
-          # plugin_music_limit: 9
-
-      - name: 🦑 Achievements
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@latest
-        with:
-          filename: achievements.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          # output_action: gist
-          # committer_gist: ${{ secrets.GIST }}
-          plugin_achievements: yes
-          plugin_achievements_display: compact
-          plugin_fortune: yes
-
-      - name: 🦑 Sponsors
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@latest
-        with:
-          filename: sponsors.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          # output_action: gist
-          # committer_gist: ${{ secrets.GIST }}
-          plugin_sponsors: yes
-          plugin_sponsors_past: yes
-          plugin_sponsorships: yes
-          plugin_sponsorships_sections: amount
-
-      - name: 🦑 General
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@latest
-        with:
-          filename: general.svg
+          filename: artifacts.svg
+          # config_display: large
           token: ${{ secrets.METRICS_TOKEN }}
           base: header
-          base_indepth: yes
-          config_order: base.header, isocalendar, languages, notable, discussions, topics
-          # output_action: gist
-          # committer_gist: ${{ secrets.GIST }}
-          plugin_isocalendar: yes
-          plugin_languages: yes
-          plugin_languages_ignored: html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot, vue, scala, c, c++, python, ejs
-          plugin_languages_details: lines, bytes-size, percentage
-          plugin_languages_sections: most-used, recently-used
-          plugin_languages_indepth: yes
-          plugin_languages_limit: 2
-          plugin_topics: yes
-          plugin_topics_limit: 0
-          plugin_topics_mode: icons
-          plugin_notable: yes
-          plugin_discussions: yes
+          # base_indepth: yes
+          config_order: base.header, isocalendar, languages, repositories, leetcode, pagespeed, topics
           
-      - name: 🦑 Splatoon
-        uses: lowlighter/metrics@latest
+          plugin_isocalendar: yes
+          # plugin_isocalendar_duration: full-year
+          
+          plugin_languages: yes
+          plugin_languages_ignored: Procfile, Ruby, PureBasic, Liquid, less, qmake, lex, gnuplot, vue, scala, ejs
+          plugin_languages_details: lines, bytes-size, percentage
+          plugin_languages_indepth: yes
+          plugin_languages_sections: most-used, recently-used
+          plugin_languages_indepth_custom: Richard5678/Transformers, Richard5678/Alignment_Algorithms, Richard5678/Reinforcement_Learning
+          plugin_languages_limit: 10
+          plugin_languages_recent_days: 14   
+          plugin_languages_skipped: MXueguang/query-reasoning, Richard5678/Alignment_Algorithms, Richard5678/Conway-s-Game-of-Life, Richard5678/Creature-Classifier, Richard5678/Fitness-App, Richard5678/Gomoku_AlphaZero, Richard5678/Machine-Learning, Richard5678/Reinforcement_Learning, Richard5678/Richard5678, Richard5678/Richard5678.github.io, Richard5678/Transformers, Richard5678/constructor, Richard5678/dotfiles, Richard5678/final, Richard5678/gomoku-ai, Richard5678/hello, Richard5678/leetcode, Richard5678/personal_website, Richard5678/practice, Richard5678/testing, TIGER-AI-Lab/ImagenHub, TIGER-AI-Lab/VideoGenHub, chilliavocado/pyserini, me50/Richard5678, sa35577/CAM-Object-Detection, swe-train/castorini__pyserini, voxel-foundation/fvdb
+          
+          plugin_topics: yes
+          plugin_topics_limit: 10
+          # plugin_topics_mode: icons
+
+          plugin_repositories: yes
+          plugin_repositories_featured: Richard5678/Alignment_Algorithms, Richard5678/Transformers
+
+          plugin_leetcode: yes
+          plugin_leetcode_sections: solved, skills
+          plugin_leetcode_user: Richard6469
+          
+          plugin_pagespeed: yes
+          plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
+          plugin_pagespeed_url: https://richard5678.github.io/
+
+
+
+      - name: Progress
         if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
         with:
-          filename: splatoon.svg
+          filename: progress.svg
+
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          # output_action: gist
-          # committer_gist: ${{ secrets.GIST }}
-          # plugin_splatoon: yes
-          # plugin_splatoon_token: ${{ secrets.SPLATOON_TOKEN }}
-          # plugin_splatoon_statink: yes
-          # plugin_splatoon_statink_token: ${{ secrets.SPLATOON_STATINK_TOKEN }}
-          # plugin_splatoon_sections: salmon-run
-          # plugin_splatoon_salmon_limit: 2
-          extras_css: |
-            h2 { display: none !important; }
-            .match:not(:last-child) { padding-bottom: 4px; }
+          config_order: habits, wakatime, leetcode, achievements, stargazers
+
+          plugin_habits: yes
+          plugin_habits_facts: no
+          plugin_habits_charts: yes
+          config_timezone: America/Los_Angeles
+
+          plugin_achievements: yes
+          plugin_achievements_only: >-
+            polyglot, stargazer, sponsor, deployer, member, maintainer, developer,
+            scripter, packager, explorer, infographile, manager
+          plugin_achievements_display: compact
+          plugin_achievements_threshold: X
+
+          plugin_wakatime: yes
+          plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, os
+          plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
+
+          plugin_stargazers: yes
+
+
+
