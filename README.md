@@ -4,10 +4,29 @@
 
 [<img align="right" width="47%" alt="🦑" src="/progress.svg">](#)
 --->
-<div style="display: flex; justify-content: space-between; width: 100%; align-items: flex-start;">
-    <img src="artifacts.svg" style="width: 49%;" alt="artifacts.svg">
-    <img src="progress.svg" style="width: 49%;" alt="progress.svg">
+<div style="
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+">
+  <a href="#">
+    <img src="/artifacts.svg" alt="🦑 Artifacts" style="
+      width: 48%;
+      height: auto;
+      object-fit: contain;
+    ">
+  </a>
+  <a href="#">
+    <img src="/progress.svg" alt="🦑 Progress" style="
+      width: 48%;
+      height: auto;
+      object-fit: contain;
+    ">
+  </a>
 </div>
+
 
 
 
