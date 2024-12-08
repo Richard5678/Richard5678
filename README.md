@@ -4,12 +4,10 @@
 [<img align="right top" width="48%" alt="🦑" src="/progress.svg">](#)
 --->
 
-<a href="#" style="display: inline-block; width: 47%; vertical-align: top;">
-  <img src="/artifacts.svg" alt="Artifacts" style="width:100%; height:auto; display:block;">
-</a>
-<a href="#" style="display: inline-block; width: 47%; vertical-align: top;">
-  <img src="/progress.svg" alt="Progress" style="width:100%; height:auto; display:block;">
-</a>
+<div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%;">
+  <img src="/artifacts.svg" alt="Artifacts" style="width:48%; height:auto;">
+  <img src="/progress.svg" alt="Progress" style="width:48%; height:auto;">
+</div>
 
 
 
