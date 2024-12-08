@@ -1,7 +1,7 @@
 
-[<img align="left" width="48%" alt="🦑" src="/artifacts.svg">](#)
+[<img align="left top" width="48%" alt="🦑" src="/artifacts.svg">](#)
 
-[<img align="right" width="48%" alt="🦑" src="/progress.svg">](#)
+[<img align="right top" width="48%" alt="🦑" src="/progress.svg">](#)
 
 
 
