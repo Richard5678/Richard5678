@@ -71,7 +71,7 @@ jobs:
           config_timezone: America/Los_Angeles
 
           plugin_leetcode: yes
-          plugin_leetcode_sections: solved, skills, recent
+          plugin_leetcode_sections: solved, skills
           plugin_leetcode_user: Richard6469
 
           plugin_achievements: yes
