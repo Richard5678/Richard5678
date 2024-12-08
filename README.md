@@ -5,8 +5,8 @@
 [<img align="right" width="47%" alt="🦑" src="/progress.svg">](#)
 --->
 <div style="display: flex; justify-content: space-between; width: 100%;">
-    <img src="artifacts.svg" style="width: 49%;" alt="artifacts.svg">
-    <img src="progress.svg" style="width: 49%;" alt="progress.svg">
+    <img src="artifacts.svg" style="width: 45%;" alt="artifacts.svg">
+    <img src="progress.svg" style="width: 45%;" alt="progress.svg">
 </div>
 
 
