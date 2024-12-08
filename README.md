@@ -7,9 +7,9 @@
 
 <div style="display: flex; justify-content: space-between; width: 100%;">
 
-  <img src="image1.jpg" alt="Image 1" style="width: 49%; height: auto;">
+  <img src="artifacts.svg" alt="artifacts.svg" style="width: 49%; height: auto;">
 
-  <img src="image2.jpg" alt="Image 2" style="width: 49%; height: auto;">
+  <img src="progress.svg" alt="progress.svg" style="width: 49%; height: auto;">
 
 </div>
 
