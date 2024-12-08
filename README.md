@@ -14,7 +14,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  gap: 4%;
+  gap: 10%;
 ">
   <img src="/artifacts.svg" alt="Artifacts" style="
     width: 45%;
