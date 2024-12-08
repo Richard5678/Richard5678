@@ -6,9 +6,10 @@
 --->
 
 <div style="display: flex; align-items: flex-start; gap: 10px;">
-    <img src="artifacts.svg" alt="Artifacts" style="flex: 1; max-width: 48%; height: auto;">
-    <img src="progress.svg" alt="Progress" style="flex: 1; max-width: 48%; height: auto;">
+    <img src="artifacts.svg" alt="Artifacts" style="flex: 1; max-width: 48%; height: auto; vertical-align: top;">
+    <img src="progress.svg" alt="Progress" style="flex: 1; max-width: 48%; height: auto; vertical-align: top;">
 </div>
+
 
 
 
