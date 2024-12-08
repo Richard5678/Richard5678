@@ -4,17 +4,9 @@
 
 [<img align="right" width="47%" alt="🦑" src="/progress.svg">](#)
 --->
-<div className="flex w-full justify-between items-start">
-      <img 
-        src="artifacts.svg" 
-        className="w-[49%]"
-        alt="Artifacts visualization"
-      />
-      <img 
-        src="progress.svg" 
-        className="w-[49%]"
-        alt="Progress visualization"
-      />
+<div style="display: flex; justify-content: space-between; width: 100%; align-items: flex-start;">
+    <img src="artifacts.svg" style="width: 49%;" alt="artifacts.svg">
+    <img src="progress.svg" style="width: 49%;" alt="progress.svg">
 </div>
 
 
