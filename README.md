@@ -5,8 +5,21 @@
 [<img align="right" width="47%" alt="🦑" src="/progress.svg">](#)
 --->
 
- ![Image 1](artifacts.svg)  ![Image 2](progress.svg) 
-|:-----------------------:|:-----------------------:|
+<div style="
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+">
+
+  [<img src="/artifacts.svg" alt="🦑 Artifacts" style="width:47%; height:auto; object-fit: contain;">](#)
+  
+  [<img src="/progress.svg" alt="🦑 Progress" style="width:47%; height:auto; object-fit: contain;">](#)
+
+</div>
+
 
 
 
