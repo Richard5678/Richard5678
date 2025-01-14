@@ -274,9 +274,9 @@
                             <div class="category column">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="50" height="50" class="gauge all">
                                     <circle class="gauge-base" r="53" cx="60" cy="60"/>
-                                    <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="14.910818713450292 329"/>
+                                    <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="14.906460099386145 329"/>
                                     <text x="60" y="50" dominant-baseline="central">155</text>
-                                    <text x="60" y="80" dominant-baseline="central" class="secondary">/3420</text>
+                                    <text x="60" y="80" dominant-baseline="central" class="secondary">/3421</text>
                                 </svg>
                                 <span class="title">All</span>
                             </div>
@@ -292,9 +292,9 @@
                             <div class="category column">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="50" height="50" class="gauge medium">
                                     <circle class="gauge-base" r="53" cx="60" cy="60"/>
-                                    <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="16.81021897810219 329"/>
+                                    <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="16.800785634118967 329"/>
                                     <text x="60" y="50" dominant-baseline="central">91</text>
-                                    <text x="60" y="80" dominant-baseline="central" class="secondary">/1781</text>
+                                    <text x="60" y="80" dominant-baseline="central" class="secondary">/1782</text>
                                 </svg>
                                 <span class="title">Medium</span>
                             </div>
@@ -385,7 +385,7 @@
                                     </defs>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="gauge info">
                                         <circle class="gauge-base" r="25" cx="28" cy="28"/>
-                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="82.38021902806298 155"/>
+                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="82.59240246406571 155"/>
                                     </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" mask="url(#mask)">
                                         <g xmlns="http://www.w3.org/2000/svg" transform="translate(5 4)" fill="none" fill-rule="evenodd">
@@ -467,7 +467,7 @@
                                     </defs>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="gauge info">
                                         <circle class="gauge-base" r="25" cx="28" cy="28"/>
-                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="9.299999999999999 155"/>
+                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="9.816666666666668 155"/>
                                     </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" mask="url(#mask)">
                                         <g stroke-width="2" fill="none" fill-rule="evenodd">
@@ -489,10 +489,10 @@
                                     <span class="prefix">Great</span>
                                     deployer
                                     <div class="value-wrapper">
-                                        <div class="value">218</div>
+                                        <div class="value">219</div>
                                     </div>
                                 </div>
-                                <div class="text">Repositories have been deployed 218 times</div>
+                                <div class="text">Repositories have been deployed 219 times</div>
                             </div>
                         </div>
                         <div class="achievement c largeable-width-half">
@@ -528,7 +528,7 @@
                                 <div class="title">
                                     <span class="prefix"></span>
                                     Maintainer
-                                    <span class="gh">ranked 691k out of 214m repositories</span>
+                                    <span class="gh">ranked 691k out of 217m repositories</span>
                                     <div class="value-wrapper">
                                         <div class="value">47</div>
                                     </div>
